@@ -1,0 +1,11 @@
+{
+    "scopes": [
+        "profile",
+        "https://www.googleapis.com/auth/userinfo.email"
+    ],
+    "secrets": [
+        "",
+        "",
+        "https://cornhub.mason-bot.xyz/OAuth/callback"
+    ]
+}

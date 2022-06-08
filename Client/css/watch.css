@@ -1,0 +1,74 @@
+ch-progress {
+    margin: 0px 0.5vw 0px 0.5vw;
+    height: 2px;
+    width: 97.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#ch-prog-hover {
+    height: 15px;
+    width: 100%;
+}
+
+#primary-bar {
+    background-color: #ffa31a;
+    height: 100%;
+    width: 0px;
+}
+
+#progress-marker {
+    border-radius: 100%;
+    background: #ffa31a;
+    height: 1vw;
+    width: 1vw;
+    transition: .1s;
+}
+
+#player_wrapper {
+    position: relative;
+    width: 59%;
+}
+
+#video_player {
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    background: #000;
+}
+
+#player_controls {
+    position: relative;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 97px;
+    background-image: linear-gradient(180deg, #ff000000, black);
+    height: 98px;
+    transition: .5s;
+}
+
+.player_images {
+    height: 1.3vw;
+    margin-left: 15px;
+}
+
+#vol_img {
+    float: left;
+    height: 1.5vw;
+}
+
+.volume_ctrl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.volume_range {
+    accent-color: white;
+    float: left;
+    display: none;
+}

@@ -1,0 +1,9 @@
+#thumbnail-container {
+    display: flex;
+    position: relative;
+    top: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}

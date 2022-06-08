@@ -1,0 +1,48 @@
+<html><head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/watch.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../javascript/script.js"></script>
+    <script src="../embedFiles/script.js"></script>
+		<style>
+			.material-symbols-outlined {
+			  font-variation-settings:
+			  'FILL' 0,
+			  'wght' 400,
+			  'GRAD' 0,
+			  'opsz' 48
+			}
+	</style>
+</head>
+<body>
+        <div id="player_wrapper" style="height: 100%; width: 100%;">
+					<div id="bufferShow" style="position: absolute;display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;"><div style="border: solid white 5px;border-radius: 100%;width: 4em;height: 4em;border-right: solid transparent;transform: rotate(0deg);"></div></div>
+					<div style="background-image: linear-gradient(180deg, #000000, transparent);width: 100%;height: 100px;position: absolute; display: block;" id="ctitle">
+						<span style="font-size: 3vw;color: white;margin-left: 20px;">$TITLE</span>
+					</div>
+					<video id="video_player" onclick="toggleVid()"></video>
+					<div id="player_controls" style="opacity: 1;">
+                <div style="height: 30px;"></div>
+                <div style="display: flex;flex-wrap: nowrap;width: 100%; padding-bottom: 10px;flex-direction: column-reverse;">
+                    <div style="display: flex;align-content: center;justify-content: space-between;align-items: center;margin-top: 0.6vw;"><div style="display: flex;">
+											<span class="material-symbols-outlined player_images" onclick="toggleVid()" id="play_button" style="margin-left: 15px; font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+                        <div class="volume_ctrl" id="vol_ctrl">
+														<span id="vol_img" class="material-symbols-outlined vol_img player_images" style=" font-variation-settings: 'FILL' 1;iud" onclick="toggleMute()">volume_up</span>
+                            <input class="volume_range" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1" style="display: none;">
+                        </div>
+                        <font style="margin-left: 15px;font-size: 20px;">0:01 / 4:31</font>
+                    </div>
+                    <div><span class="material-symbols-outlined player_images" onclick="fullscreen()" style="margin-right: 15px; font-size: 2.5vw; bottom: 0.8vw; position: relative;">fullscreen</span></div>
+                </div><ch-progress style="display: flex;">
+                        <div id="ch-prog-hover" style="position: absolute;"></div>
+                        <div id="primary-bar" style="display: flex; align-items: center; justify-content: flex-end; width: 0.735979%;">
+                            <div id="progress-marker" style="width: 0vw; height: 0vw;">
+                            </div>
+                        </div>
+                    </ch-progress>
+                    </div>
+            </div>
+        </div>
+</body></html>
